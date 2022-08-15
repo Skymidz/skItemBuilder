@@ -86,8 +86,8 @@ function LoadMenuItemBuilder()
             RageUI.ButtonWithStyle("~g~→ Valider ", nil, {RightLabel = "→→→"}, AllCheck, function(h, a, s)
                 if s then 
                     TriggerServerEvent("sk_itembuilder:AddItem", itemCreate)
-                    if Config.okokNotif then exports['okokNotify']:Alert("Item Builder", "L'item a bien était ajouté, l'item sera actif au prochain reboot", 5000, 'success')
-                    else ESX.ShowNotification("L'item a bien était ~g~ajouté~s~, l'item sera ~b~actif au prochain reboot") end 
+                    if Config.okokNotif then exports['okokNotify']:Alert("Item Builder", "L'item a bien été ajouté", 5000, 'success')
+                    else ESX.ShowNotification("L'item a bien été ~g~ajouté") end 
                     itemCreate.nom,itemCreate.label,itemCreate.poids,itemCreate.rare,itemCreate.canremove="~r~A Saisir","~r~A Saisir","~r~A Saisir","0","1"
                     RageUI.CloseAll()
                 end
